@@ -34,6 +34,7 @@ public class LoginProtectedInterceptor implements HandlerInterceptor {
         String json = objectMapper.writeValueAsString(result);
         //将json字符串写入响应体
         response.getWriter().write(json);
+        System.out.print("");
         //不放行
         return false;
     }
